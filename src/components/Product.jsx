@@ -1,6 +1,6 @@
 import { useContext } from "react"; // useContext'i ekle
 import { ScProduct } from "./scParts";
-import { CartContext } from "../contexts/CartContextProvider"; // CartContext'i import et
+import { CartContext } from "../contexts/CartContextProvider.jsx"; // CartContext'i import et
 
 const Product = ({ product }) => {
   // Sadece product'ı prop olarak al

@@ -1,7 +1,8 @@
+// Products.jsx
 import { useContext } from "react";
 import styled from "styled-components";
-import { ProductContext } from "../contexts/ProductContextProvider";
-import { CartContext } from "../contexts/CartContextProvider";
+import { ProductContext } from "../contexts/ProductContextProvider.jsx";
+// import { CartContext } from "../contexts/CartContextProvider"; // Artık Products'ta addItem'a ihtiyacımız yok, kaldırabiliriz
 import Product from "./Product";
 
 const ScProducts = styled.section`
@@ -20,12 +21,15 @@ const ScProducts = styled.section`
 
 const Products = () => {
   const { products } = useContext(ProductContext);
-  const { addItem } = useContext(CartContext);
+  // const { addItem } = useContext(CartContext); // Artık burada addItem'a ihtiyacımız yok
 
   return (
     <ScProducts>
       {products.map((product) => (
-        <Product key={product.id} product={product} addItem={addItem} />
+        <Product
+          key={product.id}
+          product={product}
+        /> /* addItem prop'unu kaldır */
       ))}
     </ScProducts>
   );

@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import { useState } from "react";
 import { Route } from "react-router-dom";
-import ProductContextProvider from "./contexts/ProductContextProvider";
-import CartContextProvider from "./contexts/CartContextProvider";
-import Navigation from "./components/Navigation";
-import Products from "./components/Products";
-import ShoppingCart from "./components/ShoppingCart";
+import ProductContextProvider from "./contexts/ProductContextProvider.jsx";
+import CartContextProvider from "./contexts/CartContextProvider.jsx";
+import Navigation from "./components/Navigation.jsx";
+import Products from "./components/Products.jsx";
+import ShoppingCart from "./components/ShoppingCart.jsx";
 
 function App() {
   return (

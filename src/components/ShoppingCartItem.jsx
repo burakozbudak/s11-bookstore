@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ScCartItem, ScCartItemDetails } from "./scParts";
-import { CartContext } from "../contexts/CartContextProvider";
+import { CartContext } from "../contexts/CartContextProvider.jsx";
 
 const Item = ({ id, image, title, price }) => {
   const { removeItem } = useContext(CartContext);
