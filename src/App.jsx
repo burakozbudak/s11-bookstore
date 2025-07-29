@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { useState } from "react";
 import { Route } from "react-router-dom";
 import ProductContextProvider from "./contexts/ProductContextProvider";
